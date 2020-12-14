@@ -1,0 +1,12 @@
+<block wx:for="{{seller}}" wx:for-index="idx" wx:for-item="things">
+  <view >
+  <image src="{{things.imageID}}"></image>
+    <view>
+      发布者:小崔
+    </view>
+    <view>
+      商品详情:{{things.type}}
+    </view>
+   
+  </view>
+</block>

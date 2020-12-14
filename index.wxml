@@ -1,0 +1,28 @@
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="../../images/111.jpg" mode="aspectFill"></image>
+	<!--页面其它部分-->
+</view>
+<view >
+<image class='userImg' src="{{tempImagePath}}"></image>
+</view>
+<view>
+<button  class='button' bindtap="imageSub">设置头像</button>
+
+<view class='colorX'>昵称</view>
+<input bindinput="inputname" class='input-box' />
+
+
+
+<view class='colorX'>联系方式</view>
+
+<input bindinput="inputnumber" class='input-box' placeholder="请输入微信号"/>
+<!-- 给input组件添加name属性，值为input_content，表示表单提交后该输入框的值的键的名字是input_content。-->
+<!-- 给input组件添加value属性，值为变量input的值，用于成功提交后清空输入框的显示的值。-->
+</view>
+
+<view>
+
+<button  class='button' bindtap="cas">{{text}}</button>
+<!-- 给button组件添加formType属性，值为submit，表示该按钮为提交表单的按钮，点击则提交表单，form表单组件内部所有带name属性的组件的值都会被传递给formSubmit函数。-->
+</view>

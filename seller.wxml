@@ -1,0 +1,29 @@
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="../../images/background.jpg" mode="aspectFill"></image>
+	<!--页面其它部分-->
+</view>
+
+<view   class="section">
+<textarea bindblur="bindTextAreaBlur" auto-height placeholder="商品介绍及价格：" />
+  
+<textarea  name="textarea_content" bindinput="inputType" value='{{input}}' placeholder=" " placeholder-style="color:blue;"  />
+</view>
+
+
+<view class="uploader">
+  <view class="uploader-text" bindtap="imageSub">  
+    <text class="sectionX">点我添加商品图片</text>
+  </view>
+  <view class="uploader-container" wx:if="{{imgUr1}}">
+    <image class="uploader-image"  src="{{imgUr1}}" mode="aspectFit" bindtap="previewImg"></image>
+  </view>
+  <image src="{{tempImagePath}}"></image>
+</view>
+<button class='button' bindtap='cas'>发布</button>
+
+
+
+
+
+
